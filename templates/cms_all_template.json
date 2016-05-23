@@ -1,0 +1,1351 @@
+{
+    "order": 2,
+    "template": "cms-all",
+    "settings": {},
+    "mappings": {
+      "ci" : {
+          "properties": {
+            "[]": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "attrProps": {
+              "properties": {
+                "owner": {
+                  "properties": {
+                    "autorepair": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "autoreplace": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "autoscale": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "is_active": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "replace_after_minutes": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "replace_after_repairs": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "ciClassId": {
+              "type": "long"
+            },
+            "ciClassName": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ciGoid": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ciId": {
+              "type": "long"
+            },
+            "ciName": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ciState": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ciStateId": {
+              "type": "long"
+            },
+            "ciStateName": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "comments": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "created": {
+              "type": "date",
+              "format": "dateOptionalTime"
+            },
+            "createdBy": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "description": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "docurl": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "execOrder": {
+              "type": "long"
+            },
+            "filter": {
+              "properties": {
+                "bool": {
+                  "properties": {
+                    "must": {
+                      "properties": {
+                        "term": {
+                          "properties": {
+                            "ciAttributes.size": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "should": {
+                      "properties": {
+                        "term": {
+                          "properties": {
+                            "ciClassName": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "health": {
+              "properties": {
+                "good": {
+                  "type": "long"
+                },
+                "notify": {
+                  "type": "long"
+                },
+                "overutilized": {
+                  "type": "long"
+                },
+                "total": {
+                  "type": "long"
+                },
+                "underutilized": {
+                  "type": "long"
+                },
+                "unhealthy": {
+                  "type": "long"
+                },
+                "updated": {
+                  "type": "long"
+                }
+              }
+            },
+            "impl": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "isActiveInRelease": {
+              "type": "boolean"
+            },
+            "lastAppliedRfcId": {
+              "type": "long"
+            },
+            "mode": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "name": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "nsId": {
+              "type": "long"
+            },
+            "nsPath": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ops": {
+              "properties": {
+                "adminStatus": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "cloudName": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "cmsId": {
+                  "type": "long"
+                },
+                "environmentProfileName": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "hypervisor": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "manifestCiId": {
+                  "type": "long"
+                },
+                "nsPath": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "payload": {
+                  "properties": {
+                    "ciName": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "className": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "eventName": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "good": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "metrics": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "newState": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "notify": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "oldState": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "overutilized": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "repeatCount": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "state": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "threshold": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "total": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "unhealthy": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "severity": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "source": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "subject": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "text": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "timestamp": {
+                  "type": "long"
+                },
+                "ts": {
+                  "type": "date",
+                  "format": "dateOptionalTime"
+                },
+                "type": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "path": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "query": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "releaseId": {
+              "type": "long"
+            },
+            "releaseType": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rfcAction": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rfcCreated": {
+              "type": "long"
+            },
+            "rfcCreatedBy": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rfcId": {
+              "type": "long"
+            },
+            "rfcUpdated": {
+              "type": "long"
+            },
+            "rfcUpdatedBy": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "updated": {
+              "type": "date",
+              "format": "dateOptionalTime"
+            },
+            "updatedBy": {
+              "type": "string",
+              "norms": {
+                "enabled": false
+              },
+              "fields": {
+                "keyword": {
+                  "type": "string",
+                  "index": "not_analyzed",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "workorder": {
+              "properties": {
+                "comments": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "created": {
+                  "type": "date",
+                  "format": "dateOptionalTime"
+                },
+                "deploymentId": {
+                  "type": "long"
+                },
+                "dpmtRecordId": {
+                  "type": "long"
+                },
+                "dpmtRecordState": {
+                  "type": "string",
+                  "norms": {
+                    "enabled": false
+                  },
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "payLoad": {
+                  "properties": {
+                    "offerings": {
+                      "type": "nested",
+                      "properties": {
+                        "ciAttrProps": {
+                          "type": "object"
+                        },
+                        "ciAttributes": {
+                          "properties": {
+                            "cost_rate": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                },
+                                "number": {
+                                  "type": "float"
+                                }
+                              }
+                            },
+                            "cost_unit": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "criteria": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "description": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "service_type": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "specification": {
+                              "type": "string",
+                              "norms": {
+                                "enabled": false
+                              },
+                              "fields": {
+                                "keyword": {
+                                  "type": "string",
+                                  "index": "not_analyzed",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "ciBaseAttributes": {
+                          "type": "object"
+                        },
+                        "ciClassName": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ciGoid": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ciId": {
+                          "type": "long"
+                        },
+                        "ciName": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ciState": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "comments": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "created": {
+                          "type": "date",
+                          "format": "dateOptionalTime"
+                        },
+                        "createdBy": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "execOrder": {
+                          "type": "long"
+                        },
+                        "isActiveInRelease": {
+                          "type": "boolean"
+                        },
+                        "lastAppliedRfcId": {
+                          "type": "long"
+                        },
+                        "nsPath": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "releaseId": {
+                          "type": "long"
+                        },
+                        "rfcId": {
+                          "type": "long"
+                        },
+                        "updated": {
+                          "type": "date",
+                          "format": "dateOptionalTime"
+                        },
+                        "updatedBy": {
+                          "type": "string",
+                          "norms": {
+                            "enabled": false
+                          },
+                          "fields": {
+                            "keyword": {
+                              "type": "string",
+                              "index": "not_analyzed",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "rfcId": {
+                  "type": "long"
+                },
+                "searchTags": {
+                  "properties": {
+                    "closeTime": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "executionTime": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "inductor": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "localWaitTime": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "queueTime": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "requestDequeTS": {
+                      "type": "date",
+                      "format": "dateOptionalTime"
+                    },
+                    "requestEnqueTS": {
+                      "type": "date",
+                      "format": "dateOptionalTime"
+                    },
+                    "responseDequeTS": {
+                      "type": "date",
+                      "format": "dateOptionalTime"
+                    },
+                    "responseEnqueTS": {
+                      "type": "date",
+                      "format": "dateOptionalTime"
+                    },
+                    "rfcAction": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "totalTime": {
+                      "type": "string",
+                      "norms": {
+                        "enabled": false
+                      },
+                      "fields": {
+                        "keyword": {
+                          "type": "string",
+                          "index": "not_analyzed",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+      },
+
+      ".percolator": {
+          "_id": {
+            "index": "not_analyzed"
+          },
+          "properties": {
+            "ci": {
+              "properties": {
+                "attrProps": {
+                  "type": "object"
+                },
+                "ciAttributes": {
+                  "properties": {
+                    "cost_rate": {
+                      "type": "string"
+                    },
+                    "cost_unit": {
+                      "type": "string"
+                    },
+                    "criteria": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "docurl": {
+                      "type": "string"
+                    },
+                    "mode": {
+                      "type": "string"
+                    },
+                    "query": {
+                      "type": "string"
+                    },
+                    "specification": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "ciClassName": {
+                  "type": "string",
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed"
+                    }
+                  }
+                },
+                "ciGoid": {
+                  "type": "string"
+                },
+                "ciId": {
+                  "type": "long"
+                },
+                "ciName": {
+                  "type": "string"
+                },
+                "ciState": {
+                  "type": "string"
+                },
+                "comments": {
+                  "type": "string"
+                },
+                "created": {
+                  "type": "date",
+                  "format": "dateOptionalTime"
+                },
+                "createdBy": {
+                  "type": "string"
+                },
+                "impl": {
+                  "type": "string"
+                },
+                "lastAppliedRfcId": {
+                  "type": "long"
+                },
+                "nsId": {
+                  "type": "long"
+                },
+                "nsPath": {
+                  "type": "string",
+                  "fields": {
+                    "keyword": {
+                      "type": "string",
+                      "index": "not_analyzed"
+                    }
+                  }
+                },
+                "updated": {
+                  "type": "date",
+                  "format": "dateOptionalTime"
+                },
+                "updatedBy": {
+                  "type": "string"
+                }
+              }
+            },
+            "filter": {
+              "properties": {
+                "bool": {
+                  "properties": {
+                    "must": {
+                      "properties": {
+                        "term": {
+                          "properties": {
+                            "ci.ciClassName.keyword": {
+                              "type": "string"
+                            },
+                            "ci.nsPath.keyword": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "query": {
+              "type": "object",
+              "enabled": false
+            },
+            "query_string": {
+              "properties": {
+                "default_field": {
+                  "type": "string"
+                },
+                "query": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+      }
+    }
+}
